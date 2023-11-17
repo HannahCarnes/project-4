@@ -18,7 +18,7 @@
 1. Imported data found in Kaggle
 2. Cleaned and prepared data (ETL) utilizing Pandas in Jupyter Notebook
 3. Compared variables to address research questions
-4. Utilized SciKit Learn machine learning algorihtms to predict wine quality
+4. Utilized SciKit Learn supervised machine learning algorihtms to predict wine quality
 
 
 ### Presentation and Summarization 
@@ -60,12 +60,21 @@ Slidedeck
 -------------------------------------------------------------------------------
 
 ## Analysis
+For white wine, we can see that the acidity dips then curves back up as quality increases. We can also see that sugar drops steeply towards the higher end of the quality ratings. Alcohol content increases steadily as quality increases.
 
+For red wine, we can see that the acidity steadily decreases as quality increases. We can also see that sugar stays relatively consistent, then increases towards the higher end of the quality ratings. Alcohol content increases steadily as quality increases.
+
+Using Logistic Regression, we were able to predict "Good" (quality rating of 6 or highter) or "Bad" (quality rating of 5 or lower) at an accuracy rate of 88.2% for red wines and 79.5% for white wines.
 
 -------------------------------------------------------------------------------
 
 ### Conclusion
+To summarize, we used a supervised learning model to predict the quality of both red and white wines with an accuracy score of 80% or higher. The data used was sourced from Kaggle, and in the form of a CSV file. We also utilized Tableau to create interesting and informational visuals to aid in the representation of our findings. 
 
+This serves as an example for using Machine Learning techniques to make predictions on real world data. Chemical composition of wine can be used to predict quality!
 
+Our data was limited to the scope of red and white variants of the Portuguese “Vinho Verde” wine. In a perfect world, we can expand this analysis to various types of wine, and collect additional data for feature use (Grape type, selling price, manufacturing price, etc.)
+
+Normalization of the quality scale nullified our necessity to use an outlier detection algorithm, in which there were many more wines that were “normal” vs. “excellent” or “poor.
 
 -------------------------------------------------------------------------------
